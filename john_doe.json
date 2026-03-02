@@ -1,0 +1,104 @@
+{
+  "contact": {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "(555) 123-4567",
+    "location": "",
+    "linkedin": "https://www.linkedin.com/in/john-doe/",
+    "Github": "https://github.com/johndoe/",
+    "website": "https://johndoe.dev"
+  },
+  "summary": "Experienced software engineer with expertise in full-stack development, cloud architecture, and DevOps practices. Proven track record in building scalable web applications, managing CI/CD pipelines, and leading cross-functional teams. Skilled in modern JavaScript frameworks, containerization, and agile methodologies.",
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Apex Digital Solutions",
+      "location": "",
+      "dates": "Mar - Nov 2025",
+      "bullets": [
+        "Developed and maintained full-stack web applications in a React/Node.js environment serving 50,000+ users",
+        "Collaborated with product and design teams to deliver features for flagship SaaS platform",
+        "Managed containerized microservices deployed on AWS ECS and Kubernetes",
+        "Implemented automated testing pipelines reducing release cycle time by 30%",
+        "Mentored junior developers and conducted code reviews to maintain code quality standards"
+      ]
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Meridian Healthcare Systems",
+      "location": "",
+      "dates": "2022 - 2024",
+      "bullets": [
+        "Designed and maintained CI/CD pipelines using Jenkins and GitHub Actions for 20+ microservices",
+        "Provisioned and managed cloud infrastructure on AWS using Terraform and CloudFormation",
+        "Implemented monitoring and alerting solutions using Prometheus, Grafana, and PagerDuty",
+        "Reduced infrastructure costs by 25% through resource optimization and reserved instance planning",
+        "Provided on-call support and incident response for production systems"
+      ]
+    },
+    {
+      "title": "Junior Web Developer",
+      "company": "Brightline Marketing Group",
+      "location": "",
+      "dates": "2021 - 2022",
+      "bullets": [
+        "Built and maintained client-facing websites using HTML, CSS, JavaScript, and WordPress",
+        "Integrated third-party APIs including Stripe, Google Maps, and HubSpot",
+        "Performed routine database maintenance and performance tuning on MySQL instances",
+        "Collaborated with designers to ensure pixel-perfect implementation of UI mockups"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "State University of Example",
+      "location": "California",
+      "dates": "2017 - 2021",
+      "details": "Minor in Data Science"
+    }
+  ],
+  "skills": {
+    "Frontend": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Vue.js"
+    ],
+    "Backend": [
+      "Node.js",
+      "Python",
+      "PostgreSQL",
+      "REST APIs",
+      "GraphQL"
+    ],
+    "DevOps": [
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "GitHub Actions",
+      "Jenkins"
+    ],
+    "Cloud": [
+      "AWS",
+      "GCP",
+      "Azure",
+      "Serverless",
+      "CDN Management"
+    ],
+    "Tools": [
+      "Git",
+      "Jira",
+      "Figma",
+      "Postman",
+      "Datadog"
+    ]
+  },
+  "certifications": [
+    "AWS Certified Solutions Architect – Associate",
+    "Google Professional Cloud Developer",
+    "Certified Kubernetes Administrator (CKA)"
+  ],
+  "projects": []
+}
