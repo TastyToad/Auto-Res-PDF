@@ -1,4 +1,8 @@
-THe purpose of this project is to automate resume tailoring due to time constraints that come with manually tailoring resumes. 
+This costs roughly 10 cents each time it is run , 
+
+
+
+The purpose of this project is to automate resume tailoring due to time constraints that come with manually tailoring resumes. 
 it takes on average around 30 minutes to tailor a resume manually using Adobe/Word/and even AI prompting. This time can increase exponentially with visually appealing formatas  
 This makes it nearly impossible to tailor resumes manually in an efficeinet way.  
 The majority of (large) compaies are now utilizing AI services to help with applcicant screening often buiilt into the already bad ATS sytems.
@@ -287,3 +291,4 @@ this can lower costs by up to 60% depending on how much spam is includedd
         }
 
     </style>
+
