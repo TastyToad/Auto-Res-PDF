@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - {{ data.contact.name }}</title>
+    <style>
+        /* ATS-SAFE CSS */
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Standard web-safe fonts */
+            line-height: 1.4;
+            color: #000;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 0px;        }
+
+        h1 {
+            font-size: 24pt;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            font-size: 11pt;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .summary {
+            font-size: 11pt;
+            margin-bottom: 15px;
+        }
+
+        .job, .education-item {
+            margin-bottom: 15px;
+        }
+
+        .job-header, .education-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .company {
+            font-style: italic;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            font-size: 11pt;
+            margin-bottom: 3px;
+        }
+
+        .skill-group {
+            margin-bottom: 5px;
+            font-size: 11pt;
+        }
+
+        .skill-category {
+            font-weight: bold;
+        }
+
+        /* Ensure PDF renders strictly single column */
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>{{ data.contact.name }}</h1>
+        <div class="contact-info">
+            {{ data.contact.email }} | {{ data.contact.phone }}<br>
+            <a href="{{ data.contact.linkedin }}">LinkedIn</a> | <a href="{{ data.contact.website }}">Portfolio</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">{{ data.summary }}</p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span>{{ data.experience[0].title }}</span>
+                <span>{{ data.experience[0].dates }}</span>
+            </div>
+            <span class="company">{{ data.experience[0].company }}</span>
+            <ul>
+                <li>{{ data.experience[0].bullets[0] }}</li>
+                <li>{{ data.experience[0].bullets[1] }}</li>
+                <li>{{ data.experience[0].bullets[2] }}</li>
+                <li>{{ data.experience[0].bullets[3] }}</li>
+                <li>{{ data.experience[0].bullets[4] }}</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>{{ data.experience[1].title }}</span>
+                <span>{{ data.experience[1].dates }}</span>
+            </div>
+            <span class="company">{{ data.experience[1].company }}</span>
+            <ul>
+                <li>{{ data.experience[1].bullets[0] }}</li>
+                <li>{{ data.experience[1].bullets[1] }}</li>
+                <li>{{ data.experience[1].bullets[2] }}</li>
+                <li>{{ data.experience[1].bullets[3] }}</li>
+                <li>{{ data.experience[1].bullets[4] }}</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>{{ data.experience[2].title }}</span>
+                <span>{{ data.experience[2].dates }}</span>
+            </div>
+            <span class="company">{{ data.experience[2].company }}</span>
+            <ul>
+                <li>{{ data.experience[2].bullets[0] }}</li>
+                <li>{{ data.experience[2].bullets[1] }}</li>
+                <li>{{ data.experience[2].bullets[2] }}</li>
+                <li>{{ data.experience[2].bullets[3] }}</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education-item">
+            <div class="job-header">
+                <span>{{ data.education[0].degree }}</span>
+                <span>{{ data.education[0].dates }}</span>
+            </div>
+            <span class="company">{{ data.education[0].institution }}</span>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skill-group">
+            <span class="skill-category">Networking:</span> {{ data.skills.Networking | join(', ') }}
+        </div>
+        <div class="skill-group">
+            <span class="skill-category">Systems Admin:</span> {{ data.skills['Systems Administration'] | join(', ') }}
+        </div>
+        <div class="skill-group">
+            <span class="skill-category">Scripting:</span> {{ data.skills.Scripting | join(', ') }}
+        </div>
+        <div class="skill-group">
+            <span class="skill-category">Security:</span> {{ data.skills.Security | join(', ') }}
+        </div>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>{{ data.certifications[0] }}</li>
+            <li>{{ data.certifications[1] }}</li>
+            <li>{{ data.certifications[2] }}</li>
+        </ul>
+    </section>
+
+
+
+
+</body>
+</html>
