@@ -1,6 +1,6 @@
 THe purpose of this project is to automate resume tailoring due to time constraints that come with manually tailoring resumes. 
 it takes on average around 30 minutes to tailor a resume manually using Adobe/Word/and even AI prompting. This time can increase exponentially with visually appealing formatas  
-This makes it nbearly impossible to tailor resumes manually.  
+This makes it nearly impossible to tailor resumes manually in an efficeinet way.  
 The majority of (large) compaies are now utilizing AI services to help with applcicant screening often buiilt into the already bad ATS sytems.
 This futher unnesseserally filters out qualified candidates.
 having a visually appealing resume is not efficient in the current market and despite the leaps in technological advancements, systems like Workday (yes , stil 0/10 experince for as long as its existed )  can not autofill a phone number correctly from -
@@ -64,7 +64,7 @@ this can lower costs by up to 60% depending on how much spam is includedd
     <header>
         <h1>{{name}}</h1>
         <div class="contact-info">
-            {{email}} • {{phone}} • {{city}}","{{state}} • <a href="#">LinkedIn: {{profile}}</a> • <a href="#">{{website}}</a>
+            {{email}} â€¢ {{phone}} â€¢ {{city}}","{{state}} â€¢ <a href="#">LinkedIn: {{profile}}</a> â€¢ <a href="#">{{website}}</a>
         </div>
     </header>
 
@@ -129,7 +129,7 @@ this can lower costs by up to 60% depending on how much spam is includedd
                 <div class="date">[Start Year] - [End Year]</div>
             </div>
             <div class="company">[University Name], [City, State]</div>
-            <p>GPA: [X.X/4.0] • Relevant Coursework: [Course 1], [Course 2], [Course 3]</p>
+            <p>GPA: [X.X/4.0] â€¢ Relevant Coursework: [Course 1], [Course 2], [Course 3]</p>
         </div>
     </section>
 
@@ -282,7 +282,8 @@ this can lower costs by up to 60% depending on how much spam is includedd
         }
         
         .certifications li:before {
-            content: "• ";
+            content: "â€¢ ";
             font-weight: bold;
         }
+
     </style>
